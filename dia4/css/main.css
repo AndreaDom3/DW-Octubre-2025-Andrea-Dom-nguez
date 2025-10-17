@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*Div y span inicial, prueba de display block e inline*/
+
+div {
+    background-color: aquamarine;
+    display: block;
+}
+
+span {
+    background-color: blueviolet;
+    display: inline;
+}
+
+/*Divs prueba display none*/
+
+.div1 {
+    background-color: pink;
+}
+
+.div2 {
+    background-color: yellowgreen;
+    display: none;
+}
+
+.div3 {
+    background-color: rebeccapurple;
+}
+
+/*Divs prueba de tamaños y display inline-block*/
+
+.div4 {
+    background-color: rgb(48, 129, 210);
+    width: 80px;
+    height: 60px;
+    display: inline-block;
+}
+
+.div5 {
+    background-color: rgb(210, 148, 48);
+    width: 560px;
+    height: 90px;
+    display: inline-block;
+}
+
+.div6 {
+    background-color: rgb(210, 48, 118);
+    width: 80px;
+    height: 10px;
+    display: inline-block;
+}
