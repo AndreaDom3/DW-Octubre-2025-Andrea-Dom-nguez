@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    
+}
+
+
+/*Encabezado de busqueda*/
+header {
+    background-color: rgb(151, 86, 21);
+    color: rgb(255, 253, 253);
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+li {
+    margin: 0 15px;
+
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*Color de la caja de links*/
+
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(171, 126, 72);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    min-height: calc(100vh - 113px);
+    
+}
+
+main h2 {
+    margin-bottom: 15px;
+    color: rgb(151, 86, 21);
+    font-size: 1.5em;
+    
+}
+
+section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/*Características de las imagenes*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Pie de página*/
+
+footer {
+    background-color: rgb(151, 86, 21);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
