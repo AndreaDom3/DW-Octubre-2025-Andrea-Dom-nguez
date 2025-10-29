@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: "Fjalla One", sans-serif;
+}
+
+nav {
+    margin: 50px;
+}
+
+/*Header*/
+
+header {
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+main {
+    margin: 50px 30px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 5px;
+}
+
+div {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header__ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.header__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__li {
+    margin: 30px;
+}
+
+.header__logo {
+    padding: 20px;
+    height: 100px;
+    width: 200px;
+}
+
+/*Section*/
+
+section {
+    padding: 10px;
+    line-height: 2em;
+}
+
+.article__cite {
+    font-size: 0.8em;
+}
+
+img {
+    width: auto;
+    height: 500px;
+}
+
+.section__figcaption {
+    font-size: 0.8em;
+    color: black;
+    text-shadow: 3px 3px 5px rgb(179, 176, 176);
+}
+
+mark {
+    font-weight: bold;
+}
+
+/*Footer*/
+
+footer {
+    display: block;
+    unicode-bidi: isolate;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    text-align: justify;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
