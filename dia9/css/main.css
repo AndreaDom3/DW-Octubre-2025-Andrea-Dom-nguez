@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*Nivel 1 */
+
+.prueba1 {
+    background-color: blueviolet;
+    border-width: .3125rem;
+    border-style: dotted;
+    border-color: rgb(75, 18, 129);
+    width: 50vw;
+    height: 50vh;
+}
+
+.prueba2 {
+    background-color: rgb(226, 43, 165);
+    border-width: .4375rem;
+    border-style: double;
+    border-color: rgb(224, 19, 49);
+    width: 50vh;
+    height: 50vw;
+}
+
+.prueba3 {
+    background-color: rgb(168, 226, 43);
+    border-width: .4375rem;
+    border-style: dashed;
+    border-color: rgb(63, 224, 19);
+    width: 20em;
+    height: 20em;
+}
+
+/*Nivel 2 */
+
+.prueba4 {
+    background-color: black;
+    height: 18.75rem;
+    width: 18.75rem;
+}
+
+@media (max-width:30rem) {
+
+    .prueba4 {
+        background-color: red;
+    }
+}
+
+
+@media (min-width:30rem) and (max-width:48.75rem) {
+
+    .prueba4 {
+        background-color: rgb(255, 247, 0);
+
+    }
+}
+
+@media (min-width:48.75rem) and (max-width:75rem) {
+
+    .prueba4 {
+        background-color: rgb(33, 175, 50);
+
+    }
+}
+
+@media (min-width:75rem) {
+
+    .prueba4 {
+        background-color: rgb(33, 104, 175);
+    }
+}
+
+.prueba5 {
+    background-color: red;
+    border-width: .4375rem;
+    border-style: double;
+    border-color: rgb(135, 9, 28);
+    height: 50vw;
+    width: 50vw;
+
+}
+
+@media print {
+
+    .prueba5 {
+        background-color: green;
+    }
+}
+
+/*Extra*/
+
+article {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-left: 1.875rem;
+    padding: 1.875rem;
+    height: 31.25rem;
+    width: 21.875rem;
+    background-color: rgb(153, 199, 239);
+    border-radius: 1.25rem;
+}
+
+.card__img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3.125rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: .625rem;
+}
+
+.profile__description {
+    font-size: 1.875rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: .625rem;
+}
+
+button{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.card__button{
+    font-size: 1.25rem;
+    border-radius: 1.25rem;
+    color: white;
+    background-color: rgb(50, 83, 201);
+}

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*Nivel 3*/
+
+
+.container {
+    font-size: clamp(1rem, 5vw, 3rem);
+    margin: max(1rem, 2%);
+    padding: min(1rem, 5vw);
+    width: 100%;
+    container-type: size;
+
+}
+
+.object {
+    display: flex;
+    width: 100%;
+}
+
+.item {
+    border-radius: 5px;
+    background-color: rgb(20, 216, 170);
+}
+
+@container (max-width: 400px) {
+    .object {
+        flex-direction: column;
+    }
+}
+
+/*Extra*/
