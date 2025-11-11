@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2.5rem;
+    font-family: "Stack Sans Notch", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    text-align: justify;
+}
+
+.header__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    margin: 3.125rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: .3125rem;
+}
+
+a {
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*NIVEL 1*/
+
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+picture {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    grid-template-rows: repeat(5, auto);
+}
+
+img {
+    width: 200px;
+    padding: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.main__img--uno {
+    filter: blur(.3125rem);
+}
+
+.main__img--dos {
+    filter: brightness(0.4);
+}
+
+.main__img--tres {
+    filter: contrast(200%);
+}
+
+.main__img--cuatro {
+    filter: drop-shadow(1rem 1rem 1.25rem blue);
+}
+
+.main__img--cinco {
+    filter: grayscale(50%);
+}
+
+.main__img--seis {
+    filter: hue-rotate(90deg);
+}
+
+.main__img--siete {
+    filter: invert(75%);
+}
+
+.main__img--ocho {
+    filter: opacity(25%);
+}
+
+.main__img--nueve {
+    grid-column: 2;
+    filter: saturate(30%);
+}
+
+.main__img--diez {
+    filter: sepia(60%);
+}
+
+.main__div--texto {
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    padding: 8px;
+    margin: .625rem;
+    border-radius: 5px;
+    background-color: rgb(204, 20, 20);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+h2 {
+    color: white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*NIVEL 2*/
+.main__div--borde {
+    padding: 50px;
+    border-radius: 5px;
+    border: solid black 3px;
+}
+
+.main__div--secundario {
+    padding: 50px;
+    border-radius: 5px;
+    border: solid black 3px;
+}
+
+p {
+    text-align: justify;
+    color: rgb(204, 20, 20);
+    text-shadow: 5px 5px 10px rgba(63, 63, 63, 0.5);
+}
+
+/*NIVEL 3*/
+.main__div--fondo {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(74, 168, 250);
+    border-radius: 5px;
+}
+
+.main__img--one {
+    mix-blend-mode: multiply;
+}
+
+.main__img--two {
+    mix-blend-mode: color;
+}
+
+.main__img--three {
+    mix-blend-mode: darken;
+}
+
+.main__img--four {
+    mix-blend-mode: luminosity;
+}
