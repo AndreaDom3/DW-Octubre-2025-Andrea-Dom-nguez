@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 2.5rem;
+    font-family: "Stack Sans Notch", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    text-align: justify;
+}
+
+.header__div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    margin: 3.125rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: .3125rem;
+}
+
+a {
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*NIVEL 1*/
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    /*título del nivel*/
+    margin: 10px;
+    text-align: center;
+}
+
+.main__div {
+    padding: 10px;
+}
+
+.main__transition--uno {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: palevioletred;
+    border-radius: 6px;
+    transition: width 3s;
+}
+
+.main__transition--uno:hover {
+    width: 200px;
+    /*transición a más ancho del div*/
+}
+
+.main__transition--dos {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(124, 241, 78);
+    border-radius: 6px;
+    transition: height 3s;
+}
+
+.main__transition--dos:hover {
+    height: 200px;
+    /*transición a más alto del div*/
+}
+
+.main__transition--tres {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(249, 178, 56);
+    border-radius: 6px;
+    transition: width 3s, height 3s;
+}
+
+.main__transition--tres:hover {
+    width: 200px;
+    height: 200px;
+    /*transición a más ancho y alto del div*/
+
+}
+
+.main__transition--cuatro {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(249, 62, 56);
+    border-radius: 6px;
+    transition: width 3s, height 3s, background-color 3s;
+}
+
+.main__transition--cuatro:hover {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 255, 191);
+    /*transición cambio del color y tamaño del div*/
+}
+
+.main__transition--cinco {
+    padding: .3125rem;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(56, 143, 249);
+    border-radius: 6px;
+    color: rgb(56, 143, 249);
+    transition: color 1s;
+}
+
+.main__transition--cinco:hover {
+    color: rgb(255, 255, 255);
+    /*transición de texto del div*/
+}
+
+/*NIVEL 2*/
+.main__transition--one {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(207, 0, 69);
+    border-radius: 6px;
+    animation: ancho ease 5s infinite;
+    animation-direction: alternate; 
+}
+
+@keyframes ancho { /*transición ancho del div*/
+    0% {
+        width: 100px;
+        height: 100px;
+    }
+
+    100% {
+        width: 300px;
+        height: 100px;
+    }
+}
+
+
+.main__transition--two {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(36, 206, 36);
+    border-radius: 6px;
+    animation: rotation ease 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes rotation { /*transición rotación del div*/
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.main__transition--three {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(232, 120, 0);
+    border-radius: 6px;
+    animation: color ease 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes color { /*transición cambio de color del div*/
+    0% {
+        background-color: rgb(232, 120, 0);
+    }
+
+
+
+    100% {
+        background-color: rgb(0, 124, 232);
+    }
+}
+
+/*NIVEL 3*/
+
+.main__transition--primero {
+    
+}
