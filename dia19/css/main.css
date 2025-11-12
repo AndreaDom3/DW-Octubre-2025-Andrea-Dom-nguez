@@ -151,10 +151,12 @@ h1 {
     background-color: rgb(207, 0, 69);
     border-radius: 6px;
     animation: ancho ease 5s infinite;
-    animation-direction: alternate; 
+    animation-direction: alternate;
 }
 
-@keyframes ancho { /*transición ancho del div*/
+@keyframes ancho {
+
+    /*transición ancho del div*/
     0% {
         width: 100px;
         height: 100px;
@@ -177,7 +179,9 @@ h1 {
     animation-direction: alternate;
 }
 
-@keyframes rotation { /*transición rotación del div*/
+@keyframes rotation {
+
+    /*transición rotación del div*/
     0% {
         transform: rotate(0deg);
     }
@@ -197,7 +201,9 @@ h1 {
     animation-direction: alternate;
 }
 
-@keyframes color { /*transición cambio de color del div*/
+@keyframes color {
+
+    /*transición cambio de color del div*/
     0% {
         background-color: rgb(232, 120, 0);
     }
@@ -212,5 +218,25 @@ h1 {
 /*NIVEL 3*/
 
 .main__transition--primero {
-    
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    background-color: aquamarine;
+}
+
+.main__transition--segundo {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    background-color: rgb(127, 242, 255);
+}
+
+.main__transition--tercero {
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 6px;
+    background-color: rgb(127, 172, 255);
 }
