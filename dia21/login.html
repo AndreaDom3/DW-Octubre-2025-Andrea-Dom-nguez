@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>"NIKE"</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/svg" href="imagenes/Logo_NIKE.svg.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="login">
+    <main class="login__main">
+        <div class="div__login">
+            <!--TÍTULO DEL INICIO DE SESIÓN-->
+            <h2 class="login__titulo">Inicio de Sesión</h2>
+            <li class="login__li"><a href="inicio.html" title="inicio">Cerrar X</a></li>
+            <form class="login__form" action="procesar_login.php" method="POST">
+
+                <!-- CAMPO DEL NOMBRE DE USUARIO O CORREO -->
+                <div class="login__div">
+                    <label for="username">Usuario o Correo:</label>
+                    <!-- type="text" o type="email"-->
+                    <input type="text" id="email" name="email" required>
+                </div>
+
+                <!--CAMPO PARA LA CONTRASEÑA -->
+                <div class="login__password">
+                    <label for="password">Contraseña:</label>
+                    <!--OCULTAR LOS CARACTERES DE LA CONTRASEÑA-->
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <!--BOTÓN PARA ENVIAR EL FORMULARIO-->
+                <button class="login__button" type="submit">Entrar</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

@@ -1,46 +1,47 @@
-<!DOCTYPE html>
-<html lang="es">
-
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ejercicio 7</title>
+    <title>"NIKE"</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="image/svg" href="imagenes/stanley-logo.svg">
+    <link rel="icon" type="image/svg" href="imagenes/Logo_NIKE.svg.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-
 
     <header>
         <nav>
-            <ul class="ul-inicio">
-                <div class="div-header">
-                    <img class="logo" src="imagenes/stanley-logo.svg" alt="stanley-logo">
-                    <li><a href="index.html" title="Inicio Stanley">Inicio</a></li>
-                    <li><a href="novedades.html" title="Novedades Stanley">Novedades</a></li>
-                    <li><a href="https://eu.stanley1913.com/es/collections/quenchers"
-                            title="Colecciones Stanley">Colecciones</a></li>
+            <ul class="header__ul"> <!--HEADER DE LA PÁGINA-->
+                <div class="header__div">
+                    <a href="inicio.html"><img class="header__logo" src="imagenes/Logo_NIKE.svg.png" href="index.html" alt="Logo_NIKE"></a>
+                    <!--LOGOTIPO-->
+                    <li><a href="inicio.html" title="inicio">Inicio</a></li>
+                    <li><a href="noticias.html" title="Noticias">Noticias</a></li>
+                    <li><a href="login.html" title="Login">Registrate</a></li>
                     <li><a href="contacto.html" title="Contacto empresa">Contacto</a></li>
-                    <li><a href="presentación.html" title="Presentación Página">Presentación</a></li>
+
                 </div>
             </ul>
         </nav>
+        <form class="header__form" id="search-form" method="get" action="/search"> <!--BUSCADOR DE LA PÁGINA-->
+            <fieldset class="header__buscador">
+                <input class="input__buscador" type="text" id="search-input" name="q" placeholder="Buscar...">
+                <input class="input__button" type="submit" value="Buscar"> <!--BOTÓN DE BÚSQUEDA-->
+            </fieldset>
+        </form>
 
     </header>
 
     <main>
 
         <section id="contacto">
-            <h1>Contáctanos</h1>
+            <h1 class="contacto">Contáctanos</h1>
             <div class="contactanos">
                 <link rel="preconnect" href="https://fonts.googleapis.com">
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +51,7 @@
 
             </div>
 
-            <h2>Preguntas Frecuentes</h2>
+            <h2 class="main__inicio--subtitle">Preguntas Frecuentes</h2>
             <div class="preguntas">
                 <ul class="lista-preguntas">
                     <li>¿Cómo creo una cuenta?</li>
@@ -59,7 +60,7 @@
                 </ul>
             </div>
 
-            <h3>Pedidos</h3>
+            <h3 class="main__inicio--subtitle">Pedidos</h3>
             <div class="preguntas">
                 <ul class="lista-preguntas">
                     <li>¿Cómo hago un pedido?</li>
@@ -68,7 +69,7 @@
                 </ul>
             </div>
 
-            <h4>Envios</h4>
+            <h4 class="main__inicio--subtitle">Envios</h4>
             <div class="preguntas">
                 <ul class="lista-preguntas">
                     <li>¿Se ha enviado mi pedido?</li>
@@ -80,13 +81,11 @@
 
     </main>
 
-    <footer>
+     <footer> <!--FOOTER DE LA PÁGINA-->
         <ul class="ul-final">
-            <li><a href="https://eu.stanley1913.com/es/pages/since-1913">Empresa</a></li>
-            <li><a href="https://eu.stanley1913.com/es/pages/faq">Atención</a></li>
-            <li><a href="https://eu.stanley1913.com/es/collections/stanley-create-custom">Personaliza tu Stanley</a>
-            </li>
-            <li><a href="https://www.instagram.com/stanley_europe/">Redes</a></li>
+            <li><a href="index.html">Empresa</a></li>
+            <li><a href="index.html">Atención</a></li>
+            <li><a href="https://www.instagram.com/">Redes</a></li>
         </ul>
     </footer>
 

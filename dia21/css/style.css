@@ -6,24 +6,34 @@
 
 }
 
+/*CUERPO DE LA PÁGINA*/
+
 body {
     font-family: "Vend Sans", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    padding-top: 100px;
 }
 
-/*Header*/
+/*HEADER DE LA PÁGINA*/
 
 header {
     background-color: rgb(0, 19, 234);
     display: flex;
     text-align: justify;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
+/*NO CONSIGO QUE LA POSICIÓN SE MANTEGA COMO ANTES DE ESPECIFICARLO FIXED, TAPA LA NOTICIA*/
+
+/*MARGEN EN EL NAV*/
 nav {
-    margin: 20px;
+    margin: 10px;
 }
 
+/*DISPOSICIÓN DE LOS ELEMENTOS EN EL DIV*/
 div {
     padding: 1.875rem;
     display: flex;
@@ -31,89 +41,107 @@ div {
     flex-wrap: wrap;
 }
 
+/*DISPOSICIÓN DE LOS ELEMENTOS EN EL HEADER--DIV*/
 .header__div {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/*CARACTERÍSTICAS DEL LOGO EN EL HEADER*/
 .header__logo {
-    width: 18.75rem;
-    height: 18.75rem;
+    width: 100px;
+    height: 100px;
     padding: 1.25rem;
     max-width: 100%;
     height: auto;
 }
 
-
+/*CARACTERÍSTICAS DEL LOGO EN EL A*/
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
+/*PROPIEDADES AL PASAR EL RATÓN*/
 a:hover {
     text-decoration: underline;
 }
 
-
+/*DISPOSICIÓN DE LOS ELEMENTOS EN EL UL*/
 ul {
     list-style: none;
     display: flex;
     justify-content: center;
-} 
-
-form {
-    margin-top: 102px;
-    display: flex;
-    justify-content:flex-end;
 }
 
+/*DISPOSICIÓN DE LOS ELEMENTOS EN EL FORM*/
+form {
+    margin-top: 65px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*CARACTERÍSTICAS DEL BUSCADOR*/
 .input__buscador {
     background-color: aliceblue;
     border-radius: .3125rem;
     padding: 5px;
 }
 
+/*CARACTERÍSTICAS DEL BOTÓN DEL BUSCADOR*/
 .input__button {
     background-color: black;
     color: white;
     border-radius: .3125rem;
     padding: 5px;
+}
 
+.input__button:hover {
+    background-color: white;
+    color: black;
 }
 
 
-/*Main*/
+/*MAIN DE LA PÁGINA*/
 
+/*MARGEN DEL MAIN*/
 main {
+    padding: 20px;
     margin: 1.25rem;
 }
 
+/*MARGEN DEL H1*/
 h1 {
     margin: 0rem 2.5rem;
-
 }
 
+/*CARACTERÍSTICAS DE LAS CITAS*/
 .main__cite {
     margin: .625rem;
     font-size: 0.8em;
     font-style: italic;
+    text-align: justify;
 }
 
+/*PADDING DEL PICTURE*/
 picture {
-    padding-left: .9375rem;
-    margin: 1.25rem;
+    padding: 20px;
 }
 
+/*MARGEN DE LA IMAGEN DEL TÍTULO*/
 .main__img--title {
     margin: 10px;
 }
 
+/*CARACTERÍSTICAS DEL H2*/
 h2 {
     font-size: 1.5625rem;
     margin: 0rem 2.5rem;
-
+    text-align: justify;
 }
+
+/*CARACTERÍSTICAS DEL H3*/
 
 h3 {
     font-size: 1.875rem;
@@ -121,37 +149,60 @@ h3 {
     text-align: justify;
 }
 
+/*CARACTERÍSTICAS DEL H4*/
 h4 {
     font-size: 1.5625rem;
     margin: 0rem 2.5rem;
-
+    text-align: justify;
 }
 
+/*CARACTERÍSTICAS DEL H5*/
+h5 {
+    font-size: 1.875rem;
+    margin: 0rem 2.5rem;
+    text-align: justify;
+}
+
+/*CARACTERÍSTICAS DEL H6*/
+h6 {
+    font-size: 1.5625rem;
+    margin: 0rem 2.5rem;
+    text-align: justify;
+}
+
+/*CARACTERÍSTICAS DEL PÁRRAFO*/
 p {
     margin: .3125rem;
     text-align: justify;
 }
 
+/*PADDING DEL PÁRRAFO*/
 .main__parrafo {
     padding: 1.25rem;
 }
 
+/*CARACTERÍSTICAS DEL SPAN*/
+span {
+    font-weight: bolder;
+}
 
+/*MARGEN DEL LI*/
 li {
     margin-left: 10px;
 }
 
 
-/*Imágenes*/
+/*IMÁGENES*/
 
+/*DISPOSICIÓN Y CARACTERÍSTICAS DE LA IMÁGEN DE LA NOTICIA 1*/
 .main__img--airjordan {
     display: flex;
     justify-content: center;
     width: 62.5rem;
     height: auto;
-
 }
 
+/*DISPOSICIÓN DE LAS IMÁGENES EN EL GRID DE LA NOTICIA 1*/
 .main__grid {
     display: flex;
     justify-content: center;
@@ -159,9 +210,9 @@ li {
     margin: 10px;
     grid-template-columns: 2;
     grid-row: 2;
-   
 }
 
+/*CARACTERÍSTICAS DE LA IMÁGEN 1 DEL GRID*/
 .img__jordan--uno {
     width: 400px;
     height: 31.25rem;
@@ -169,14 +220,15 @@ li {
     grid-row: 1;
 }
 
+/*CARACTERÍSTICAS DE LA IMÁGEN 2 DEL GRID*/
 .img__jordan--dos {
     width: 400px;
     height: 31.25rem;
     grid-column: 3;
     grid-row: 1 / 3;
-    
 }
 
+/*CARACTERÍSTICAS DE LA IMÁGEN 3 DEL GRID*/
 .img__jordan--tres {
     width: 28.125rem;
     height: 31.25rem;
@@ -184,8 +236,129 @@ li {
     grid-row: 2;
 }
 
-/*Pie de página*/
+/*PADDING DE LA IMÁGEN DE LA NOTICIA 3*/
+.main__picture--mind {
+    padding: 30px;
+}
 
+
+/*PADDING DE LA IMÁGEN DE LA NOTICIA 3*/
+.main__inicio {
+    display: flex;
+    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+}
+
+/*PADDING DE LOS TÍTULOS DE LA PÁGINA NOTICIAS*/
+.main__inicio--title {
+    padding: -2px;
+}
+
+/*DISPOSICIÓN DE LA NOTICIA 1*/
+.main__inicio--div1 {
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 10px;
+}
+
+/*DISPOSICIÓN DE LA NOTICIA 2*/
+.main__inicio--div2 {
+    grid-column: 2;
+    grid-row: 2;
+    border-radius: 10px;
+}
+
+/*DISPOSICIÓN DEL TEXTO DE LA NOTICIA 3*/
+.main__inicio--div3 {
+    grid-column: 1;
+    grid-row: 3;
+    border-radius: 10px;
+}
+
+/*CARACTERÍSTICAS DE LA IMÁGEN DE LA NOTICIA 1*/
+.main__inicio--jordan {
+    padding: 20px;
+    width: 600px;
+    height: auto;
+}
+
+/*CARACTERÍSTICAS DE LA IMAGEN DE LA NOTICIA 2*/
+.main__inicio--exposicion {
+    padding: 20px;
+    width: 600px;
+    height: auto;
+}
+
+/*CARACTERÍSTICAS DE LA IMAGEN DE LA NOTICIA 3*/
+.main__inicio--mind {
+    padding: 20px;
+    width: 600px;
+    height: auto;
+}
+
+/*CARACTERÍSTICAS DE LA CITA NOTICIA 1*/
+.main__inicio--cite1 {
+    padding-left: 40px;
+}
+
+/*CARACTERÍSTICAS DE LA CITA NOTICIA 2*/
+.main__inicio--cite2 {
+    display: flex;
+    justify-content: left;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+/*CARACTERÍSTICAS DE LA CITA NOTICIA 3*/
+.main__inicio--cite3 {
+    display: flex;
+    justify-content: left;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
+/*CARACTERÍSTICAS DE LOS ENLACES DE LA PÁGINA NOTICIAS*/
+.inicio__enlaces {
+    color: black;
+}
+
+/*CARACTERÍSTICAS DEL CUERPO DEL LOGIN*/
+.login {
+    padding: 30px;
+    background-image: linear-gradient(to right, rgb(0, 19, 234), rgb(67, 117, 255), rgb(205, 255, 238));
+}
+
+/*DISPOSICIÓN DEL LOGIN*/
+.login__main {
+    display: flex;
+    justify-content: center;
+    align-items: row;
+}
+
+.div__login {
+    margin: 10px;
+    padding-top: 20px;
+}
+
+.login__li {
+    display: flex;
+    align-content: flex-end;
+}
+
+.login__div {
+    margin: 10px;
+    padding-top: 20px;
+}
+
+.contacto {
+    padding-top: 50px;
+}
+
+/*PIE DE PÁGINA*/
+
+/*CARACTERÍSTICAS DEL FOOTER DE LA PÁGINA*/
 footer {
     height: 3.125rem;
     background-color: rgb(0, 0, 0);

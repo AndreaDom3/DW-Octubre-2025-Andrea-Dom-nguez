@@ -5,113 +5,163 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Ejercicio 7</title>
+    <title>"NIKE"</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" type="image/svg" href="imagenes/stanley-logo.svg">
+    <link rel="icon" type="image/svg" href="imagenes/Logo_NIKE.svg.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+        rel="stylesheet">
 
 </head>
 
 <body>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
 
     <header>
         <nav>
-            <ul class="ul-inicio">
-                <div class="div-header">
-                    <img class="logo" src="imagenes/stanley-logo.svg" alt="stanley-logo">
-                    <li><a href="index.html" title="Inicio Stanley">Inicio</a></li>
-                    <li><a href="novedades.html" title="Novedades Stanley">Novedades</a></li>
-                    <li><a href="https://eu.stanley1913.com/es/collections/quenchers"
-                            title="Colecciones Stanley">Colecciones</a></li>
+            <ul class="header__ul"> <!--HEADER DE LA PÁGINA-->
+                <div class="header__div">
+                    <img class="header__logo" src="imagenes/Logo_NIKE.svg.png" href="index.html" alt="Logo_NIKE">
+                    <!--LOGOTIPO-->
+                    <li><a href="inicio.html" title="inicio">Inicio</a></li>
+                    <li><a href="noticias.html" title="Noticias">Noticias</a></li>
+                    <li><a href="login.html" title="Login">Registrate</a></li>
                     <li><a href="contacto.html" title="Contacto empresa">Contacto</a></li>
-                    <li><a href="presentación.html" title="Presentación Página">Presentación</a></li>
+
                 </div>
             </ul>
-
         </nav>
+        <form class="header__form" id="search-form" method="get" action="/search"> <!--BUSCADOR DE LA PÁGINA-->
+            <fieldset class="header__buscador">
+                <input class="input__buscador" type="text" id="search-input" name="q" placeholder="Buscar...">
+                <input class="input__button" type="submit" value="Buscar"> <!--BOTÓN DE BÚSQUEDA-->
+            </fieldset>
+        </form>
 
     </header>
 
     <main>
+        <section class="main__section" id="AirJordan"> <!--SECCIÓN DE NOTICIAS-->
+            <div class="main__img--title"> <!--TÍTULO UNO DE LA NOTICIA-->
+                <h1 class="main__title">Las Air Jordan perfectas para llevar con todo, ahora en el outlet de Nike
+                    en liquidación a mitad de precio.
+                </h1>
+                <h2 class="main__subtitle">El modelo más vendido de la temporada</h2> <!--SUBTÍTULO DE LA NOTICIA-->
+                <cite class="main__cite">16 Noviembre 2025</cite> <!--FECHA DE PUBLICACIÓN-->
 
-        <section id="presentacion">
-            <h1>Presentación de la página web</h1>
-            <div class="presentacion-web">
-                <link rel="preconnect" href="https://fonts.googleapis.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-                <link
-                    href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-                    rel="stylesheet">
-                <p> Esta página se trata de un prototipo sencillo de presentación de la gama de productos Stanley; se
-                    trata de unos termos para transportar bebidas o comidas, en algunos casos, muy resistentes y con
-                    prestaciones de conservación de la temperatura excepcionales. Garantizan hasta 47 horas de
-                    conservación de la temperatura.
+                <picture class="main__picture"><img class="main__img--airjordan" loading="lazy"
+                        src="imagenes/840_560.webp" alt="AirJordan"> <!--IMAGEN DE CABECERA-->
+                </picture>
+                <!--TEXTO DE LA NOTICIA-->
+                <p class="main__parrafo">Hay zapatillas que ya son auténticos iconos de diseño, como es el caso de las
+                    Air Jordan, da igual
+                    que hablemos de las de caña baja o alta. Tener un par en el armario nos asegura mil y un outfits con
+                    estilo, y sin duda estas <span>Air Jordan 1 Low</span> en color blanco y verde no son una excepción.
+                    Que ahora
+                    podemos encontrar en el outlet de la tienda oficial de la marca con un <span> 50% de descuento por
+                        64,99
+                        euros </span> (en lugar de 129,99 euros).
+                </p>
+                <p class="main__parrafo"> Estas zapatillas Air Jordan 1 Low son muy versátiles y fáciles de combinar,
+                    gracias a su diseño
+                    clásico de estilo retro, propio de las deportivas universitarias pero actualizado en una gama de
+                    colores perfectos para combinar con tus prendas marrón chocolate.
 
-                    La mayor característica que define a la empresa de Stanley es su versatilidad en los modelos que
-                    presenta, la variedad de colores, tamaños y colecciones exclusivas, permitiendo a los consumidores
-                    poder elegir el producto que mejor les convenga e incluso el que más les represente.
+                    Con un upper que combina la piel genuina con la piel sintética para que resulten tan duraderas como
+                    elegantes, estas zapatillas son las clásicas que querrás llevar con todo: desde con traje para
+                    vestir elegante en el trabajo hasta con tus vaqueros favoritos cuando quedes para pasar la tarde con
+                    tus amigas.
+                </p>
+            </div>
+            <div class="main__grid"> <!--CUADRÍCULA DE IMAGENES DE LA NOTICIA-->
+                <picture class="main__picture--dos">
+                    <img class="img__jordan--uno" loading="lazy" src="imagenes/WMNS+AIR+JORDAN+1+LOW (1).avif"
+                        alt="Air Jordan Nike">
+                    <img class="img__jordan--dos" loading="lazy" src="imagenes/WMNS+AIR+JORDAN+1+LOW (2).avif"
+                        alt="Air Jordan Nike">
+                    <img class="img__jordan--tres" loading="lazy" src="imagenes/1366_2000.webp" alt="Air Jordan Nike">
+                </picture>
+            </div>
+
+            <div class="main__img--title"> <!--TÍTULO UNO DE LA NOTICIA-->
+                <h3 class="main__title">Llega a Madrid la exposición 'NIKE. Diseño en movimiento': la cita obligada para
+                    los amantes de las zapatillas y la cultura pop </h3>
+                <h4 class="main__subtitle">Nike desembarca con una expo para los sneakerheads</h4>
+                <!--SUBTÍTULO DE LA NOTICIA-->
+                <cite class="main__cite">18 Noviembre 2025</cite> <!--FECHA DE PUBLICACIÓN-->
+
+                <picture class="main__picture"><img class="main__img--airjordan" loading="lazy"
+                        src="imagenes/exposicion.jpeg" alt="Exposición Nike"> <!--IMAGEN DE CABECERA-->
+                </picture>
+
+                <!--TEXTO DE LA NOTICIA-->
+                <p class="main__parrafo">Cuando unas zapatillas pueden contar su propia película de acción, es que algo
+                    está moviéndose, y no precisamente en una cinta de Nike World. Eso es justo lo que pasa con la
+                    exposición <span>"NIKE. Diseño en movimiento"</span>, que aterriza en Madrid para dejar sin aliento
+                    y con ganas
+                    de estrenar unas zapatillas míticas, a los más acérrimos sneakerheads.
+                </p>
+                <p class="main__parrafo"> La exposición abre sus puertas el <span>12 de noviembre de 2025</span> en el
+                    espacio
+                    TeamLabs/ de Madrid (Plaza de San Martín, 1) y se podrá visitar hasta el 25 de enero de 2026. Se
+                    trata de la primera gran muestra dedicada a la marca deportiva desde un punto de vista de diseño,
+                    tecnología y cultura, organizada por La Fábrica.
+
+                    En su recorrido, la exposición despliega más de 175 piezas procedentes del Department of Nike
+                    Archives en Oregón: bocetos, prototipos de zapatillas legendarias como las Air Jordan o las Waffle
+                    Trainer, máquinas que han medido el movimiento de los atletas, e incluso prendas personales de
+                    figuras como Rafa Nadal, Pau Gasol o Serena Williams
                 </p>
             </div>
 
-            <h2>Secciones</h2>
-            <div>
-                <p>Las secciones que se presentan en esta página web son las siguientes: </p>
-                <p> Inicio: Esta sección presenta uno de los modelos de Stanley; en este caso la IceFlow; el
-                modelo más vendido de la temporada. A diferencia de la mítica y más conocida Stanley, Ice Flow
-                tiene
-                un tamaño
-                más reducido, pero de gran capacidad y versatilidad. En esta página, especificamos de manera
-                detallada las múltiples cualidades, además de la gama cromática de la temporada, entre otras
-                características del producto en cuestión.
+            <div class="main__img--title"> <!--TÍTULO UNO DE LA NOTICIA-->
+                <h5 class="main__title">Las zapatillas de Camavinga que prometen un salto mental en el fútbol.</h5>
+                <h6 class="main__subtitle">El modelo Mind 001, que usan Haaland y Rashford</h6>
+                <!--SUBTÍTULO DE LA NOTICIA-->
+                <cite class="main__cite">19 Noviembre 2025</cite> <!--FECHA DE PUBLICACIÓN-->
 
-                <p>Novedades: En la sección de Novedades es un enlace directo a la página de venta de
-                productos de Stanley, donde podrás investigar, escoger y comprar aquel artículo que prefieras de
-                toda su selección.</p>
+                <picture class="main__picture"><img class="main__img--mind" loading="lazy" src="imagenes/cama.webp"
+                        alt="Mind 001"> <!--IMAGEN DE CABECERA-->
+                </picture>
 
-                <p>Contacto: En la página Contactos podremos ver un listado de preguntas frecuentes para poder
-                ayudarte
-                en el proceso de compra o consulta sobre tus productos.</p>
-                
-
-            </div>
-
-            <h3>Aspectos de la página</h3>
-            <div>
-                <p>La página se compone de un header con un fondo de color azulado rgb(184, 202, 217), con el
-                    logotipo de la empresa Stanley en color negro y las secciones de la página web en blanco,
-                    generando una armonía elegante, sin que haga daño a la vista y con carácter minimalista.
-                    En el main en la mayoría de las páginas se compone de un h1 como título de lo que se va a hablar
-                    en la página, uno o varios p justificados, donde se explican todos los aspectos a tratar, además
-                    de una serie de imágenes donde se pueden algunos modelos de los productos. Si vemos el footer
-                    podemos observar que se trata de un fondo negro con diferentes apartados de la página en blanco
-                    para generar contraste y seguir con la línea elegante y minimalista del header.
-
+                <!--TEXTO DE LA NOTICIA-->
+                <p class="main__parrafo">El fútbol de élite está acostumbrado a que la innovación le llegue por los
+                    pies, pero rara vez con un discurso tan directo hacia la mente. En Clairefontaine, <span>Eduardo
+                        Camavinga
+                    </span>apareció hace días con un calzado rojo de formas futuristas que levantó todas las miradas.
                 </p>
-                <p>En el caso concreto de la sección de contacto, sigue predominando la estructura, pero cambiamos
-                    el p por una lista desordenada con li para comunicar las preguntas frecuentes de los clientes
-                    sobre los productos o servicios de la empresa. Todo esto está escrito con la fuente Roboto
-                    condensada, representando el lado elegante con el moderno que aporta la empresa Stanley.
+                <p class="main__parrafo">No eran unas zapatillas de descanso ni un capricho modístico. Eran las Nike
+                    <span>Mind 001</span>, el nuevo experimento tecnológico de la marca estadounidense, que saldrá a la
+                    venta
+                    próximamente por 84,99 euros. Pocas horas después de pisar la concentración con la selección
+                    francesa, el centrocampista volvió a Madrid por unas molestias, pero la imagen ya había saltado a
+                    los ojos de millones de aficionados intrigados.
 
+                    Sin embargo, no fue la selección francesa la primera que se fijó en ellas, sino Inglaterra. En la
+                    concentración del combinado de Thomas Tuchel, la Federación ha repartido oficialmente las Nike Mind
+                    como parte del equipamiento obligatorio de la ventana internacional. No se trata de un accesorio
+                    estético, al menos no en el discurso. Se presentan como zapatillas con base en la
+                    <span>“neurociencia”
+                    </span>, diseñadas para favorecer la calma, la concentración y la sensación de presencia durante las
+                    reuniones técnicas o los momentos previos a entrenar.
                 </p>
             </div>
-
-
-
+            <div class="main__picture--mind">
+                <picture class="main__picture">
+                    <img class="img__mind001" loading="lazy" src="imagenes/modelo.webp"
+                        alt="Mind 001">
+                </picture>
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer> <!--FOOTER DE LA PÁGINA-->
         <ul class="ul-final">
-            <li><a href="https://eu.stanley1913.com/es/pages/since-1913">Empresa</a></li>
-            <li><a href="https://eu.stanley1913.com/es/pages/faq">Atención</a></li>
-            <li><a href="https://eu.stanley1913.com/es/collections/stanley-create-custom">Personaliza tu Stanley</a>
-            </li>
-            <li><a href="https://www.instagram.com/stanley_europe/">Redes</a></li>
+            <li><a href="index.html">Empresa</a></li>
+            <li><a href="index.html">Atención</a></li>
+            <li><a href="https://www.instagram.com/">Redes</a></li>
         </ul>
     </footer>
 
