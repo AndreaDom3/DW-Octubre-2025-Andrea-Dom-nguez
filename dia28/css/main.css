@@ -55,6 +55,14 @@ a:hover {
     color: rgb(171, 216, 255);
 }
 
+div {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: blueviolet; 
+}
+
 .color {
     height: 100px;
     width: 100px;
