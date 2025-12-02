@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compstible" content="IE=edge">
+    <title>Ejercicio 30</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+    <section class="content-section">
+        <h1>DÍA 30</h1>
+        <h2>NIVEL 1</h2>
+        <button id="open">Open</button>
+        <button id="close">Close</button>
+        <button id="move">Move</button>
+        <button id="resize">Resize</button>
+        <button id="location">Location</button>
+    </section>
+
+    <section class="content-section">
+        <h2>NIVEL 2</h2>
+        <div class="numero-div">1</div>
+        <div class="numero-div">2</div>
+        <div class="numero-div">3</div>
+        <div class="numero-div">4</div>
+        <div class="numero-div">5</div>
+        <button onclick="actualizarNumeros()">Clicky</button>
+
+    </section>
+
+    <section class="content-section">
+        <h2>NIVEL 3</h2>
+        <input type="number" id="num1" placeholder="Primer número">
+
+        <select name="calculadora" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <input type="number" id="num2" placeholder="Segundo número">
+
+        <button onclick="calculate()">Calcular</button>
+
+        <div class="result" id="result"></div>
+
+
+    </section>
+
+
+
+</body>
+
+</html>
