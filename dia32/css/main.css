@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-snap-type: mandatory;
+}
+
+/*Características de las secciones*/
+.content-section {
+    padding: .9375rem;
+    margin-bottom: 1.25rem;
+    border-radius: .3125rem;
+    box-shadow: 0 .125rem .25rem rgb(68, 85, 114);
+}
+
+/*Margin de los títulos y subtitulos de cada ejercicio*/
+h1,
+h2,
+h3 {
+    margin-bottom: .9375rem;
+}
+
+/*Características del botón*/
+button {
+    background-color: rgb(37, 150, 152);
+    color: white;
+    border: none;
+    padding: .625rem .9375rem;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: .3125rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+}
+
+/*Características del enlace*/
+a {
+    color: aliceblue;
+    text-decoration-line: none;
+}
+
+/*Características del enlace al pasar por encima*/
+a:hover {
+    color: rgb(171, 216, 255);
+}
+
+/*Características del cuerpo de la página web*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(4);
+    grid-template-rows: repeat(4);
+    height: 100vh;
+    margin: 3.75rem;
+    transition: background-color 0.5s, color 0.5s;
+
+}
+
+/*Características del cuerpo de la página web en su versión luz*/
+body.light-mode {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+/*Características del id contenedor*/
+#contenedor {
+    width: 20vw;
+    padding: 1.25rem;
+    border: .1875rem solid #333;
+    background-color: #e940ff;
+    text-align: center;
+    transition: width 0.5s ease-in-out;
+    box-sizing: border-box;
+    min-height: 6.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+}
+
+/*Características de la clase cuadrado*/
+.cuadrado {
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: #34db82;
+    margin-bottom: 1.25rem;
+    border-radius: .3125rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+/*Características de la clase cuadrado al rotar*/
+.cuadrado.rotar {
+    transform: rotate(180deg);
+}
+
+/*Características de la clase cuadrado al aumentar de tamaño*/
+.cuadrado.escalar {
+    transform: scale(1.5);
+}
+
+/*Características del id midiv*/
+#miDiv {
+    border: 4px solid #34db82;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #ff233c;
+    display: block;
+}
+
+/*Características de la clase contenedor*/
+.contenedor {
+    background-color: #3498db;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+/*Características de la clase texto*/
+.texto {
+    color: white;
+    font-size: 18px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/*Características de la clase botón alternar*/
+.boton-alternar {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: rgb(37, 150, 152);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/*Características del párrafo*/
+p {
+    font-size: 1.2em;
+    text-align: center;
+    padding: 1.25rem;
+}
+
+/*Características de la clase contenedor-celdas*/
+.contenedor-celdas {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+}
+
+/*Características de la clase celdas*/
+.celda {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #ff6a6a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+/*Características de la clase celdas al activarse*/
+.celda-activa {
+    background-color: #79ff68 !important;
+    color: white;
+}
+
+
