@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compstible" content="IE=edge">
+    <title>Ejercicio 33</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <!--Día 33, En el Nivel 1 generamos una página con una section, en el que debe contener una serie de elementos con animaciones.-->
+    <section class="content-section">
+        <h1>DÍA 33</h1>
+        <h2>NIVEL 1</h2>
+        <h3>Ejercicio 1.1</h3>
+        <!--En el primer apartado realizaremos un div en forma cuadrada con un botón que hará girar el cuadrado cambiandolo de color.-->
+        <div class="contenedor" id="miDiv">
+        </div>
+        <button onclick="toggleAnimacion()">
+            Rotar
+        </button>
+        <button onclick="alternarTamaño()">Tamaño</button>
+
+    </section>
+
+    <section class="content-section">
+        <h3>Ejercicio 1.2</h3>
+        <!--En el segundo apartado, haremos un párrafo que cambiará tanto el estilo como el color de la tipografía aplicada.-->
+        <p id="miParrafo" class="color-clase">Vamos a cambiar el color y estilo de está frase.</p>
+        <button onclick="cambiarEstilo()">Estilo</button>
+    </section>
+
+    <section class="content-section">
+        <h3>Ejercicio 1.3</h3>
+        <!--En el tercer apartado, haremos un botón que hará que el div en forma de cuadrado cambié de tamaño.-->
+        <p>He aplicado la animación al DIV del 1.1</p>
+    </section>
+
+    <section class="content-section">
+        <h3>Ejercicio 1.4</h3>
+        <!--En el cuarto apartado, generaremos nuevos divs mediante un botón en Javascript-->
+        <div class="contenedor-divs" id="contenedor">
+        </div>
+        <button id="crearDivBtn">Crear Div</button>
+    </section>
+
+
+</body>
+
+</html>

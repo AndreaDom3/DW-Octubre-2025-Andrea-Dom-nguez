@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-snap-type: mandatory;
+}
+
+/*Características de las secciones*/
+.content-section {
+    background-color: rgb(140, 220, 255);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(68, 85, 114);
+}
+
+/*Margin de los títulos y subtitulos de cada ejercicio*/
+h1,
+h2,
+h3 {
+    margin-bottom: 15px;
+}
+
+/*Características del botón*/
+button {
+    background-color: rgb(37, 150, 152);
+    display: block;
+    color: white;
+    border: none;
+    margin: 1.25rem auto;
+    padding: .625rem 1.25rem;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/*Características del enlace*/
+a {
+    color: aliceblue;
+    text-decoration-line: none;
+}
+
+/*Características del enlace al pasar por encima*/
+a:hover {
+    color: rgb(171, 216, 255);
+}
+
+/*Características del cuerpo de la página web*/
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: #000000;
+    display: grid;
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: repeat(4);
+    grid-template-rows: repeat(4);
+    height: 100vh;
+    margin: 60px;
+}
+
+/*Características del contenedor*/
+.contenedor {
+    width: 6.25rem;
+    height: 6.25rem;
+    background-color: rgb(45, 181, 255);
+    border-radius: 3px;
+    margin: 3.125rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+}
+
+/*Características de la clase animado que hace rotar y cambiar el color del div*/
+.animado {
+    animation: rotarYcambiarColor 1s ease-in-out forwards;
+}
+
+
+/*Características de la animación de la rotación y cambio de color del div*/
+
+@keyframes rotarYcambiarColor {
+    0% {
+        transform: rotate(0deg);
+        background-color: rgb(45, 181, 255);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        background-color: #be3bff;
+    }
+}
+
+
+/*Características de la fuente, cambio de color y estilo*/
+.color-clase {
+    color: rgb(0, 47, 164);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*Características de la animación del cambio de tamaño del div y añadir borde*/
+.crecer {
+    width: 200px;
+    height: 200px;
+    border: solid 4px rgb(117, 14, 172);
+}
+
+/*Contenedor del generador de Divs*/
+.contenedor-divs {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+/*Características de los nuevos divs generados*/
+.nuevo-div {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease-out forwards; /*Transición de la animación*/
+}
+
+/*Características de los nuevos divs generados*/
+#crearDivBtn {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*Características de la animación al aparecer el nuevo div*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
