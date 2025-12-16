@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compstible" content="IE=edge">
+    <title>Ejercicio 36</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="images/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <h1 class="titulo">Nivel 1</h1>
+    <section class="swiper">
+        <div class="tabs-container">
+            <div role="tablist" aria-label="Secciones de contenido">
+                <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="panel-1" tabindex="0">
+                    Sección 1
+                </button>
+                <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="panel-2" tabindex="-1">
+                    Sección 2
+                </button>
+                <button id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="panel-3" tabindex="-1">
+                    Sección 3
+                </button>
+                <button id="tab-4" type="button" role="tab" aria-selected="false" aria-controls="panel-4" tabindex="-1">
+                    Sección 4
+                </button>
+            </div>
+
+            <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" class="tab-panel">
+                <h3>Efecto 3D Flip</h3>
+                <div class="flip-cards-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>STREETWEAR</h4>
+                                <p>Zapatillas skater</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="images/1.jpg" alt="Imagen 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>NIKE</h4>
+                                <p>Zapatillas más realistas</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="images/2.jpeg" alt="Imagen 2">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <h4>JORDAN</h4>
+                                <p>Diferentes modelos</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="images/3.jpeg" alt="Imagen 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" class="tab-panel" hidden>
+                <h3>Sección 2</h3>
+                <video autoplay loop muted playsinline>
+                    <iframe class="iframe-video" src="https://www.youtube.com/embed/jI1l7hAvxBE?si=hXIdoOozSr6bRj2H"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </video>
+            </div>
+
+            <div id="panel-3" role="tabpanel" tabindex="0" aria-labelledby="tab-3" class="tab-panel" hidden>
+                <h3>Sección 3</h3>
+                <h3>Adivina el Número</h3>
+                <div class="adivinanza">
+                    <p>Adivina el número del 1 al 9</p>
+                    <label for="numero-usuario">Ingresa un número del 1 al 9:</label>
+                    <input type="number" id="numero-usuario" min="1" max="9" value="1">
+
+                    <button onclick="comprobarAdivinanza()">Comprobar</button>
+                </div>
+                <div id="mensaje-resultado"></div>
+            </div>
+
+            <div id="panel-4" role="tabpanel" tabindex="0" aria-labelledby="tab-4" class="tab-panel" hidden>
+                <h3>Sección 4</h3>
+                <p>Holi no se que escribir</p>
+            </div>
+        </div>
+
+</body>
+
+</html>

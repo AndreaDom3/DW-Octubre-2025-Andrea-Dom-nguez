@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    /*Altura del cuerpo de la web*/
+    margin: 20px;
+    /*Margen de la web*/
+    font-family: "Roboto Condensed", sans-serif;
+    /*Fuente usada en la web*/
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+.titulo {
+    background-color: rgb(255, 15, 55);
+    /*Color de fondo del título*/
+    color: white;
+    /*Color de la letra*/
+}
+
+h1,
+h2,
+h3 {
+    font-size: 30px;
+    /*Tamaño, Padding, Margen y color de los diferentes H*/
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(255, 15, 55);
+}
+
+.tabs-container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+[role="tablist"] {
+    display: flex;
+    border-bottom: 2px solid #ff5773;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+[role="tab"] {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-bottom: none;
+    background-color: #ff5773;
+    transition: background-color 0.3s, color 0.3s;
+    /* Transición suave en las pestañas */
+}
+
+[role="tab"]:hover {
+    background-color: #fc4362;
+}
+
+[role="tab"][aria-selected="true"] {
+    background-color: #fff;
+    border-color: #ff5773;
+    border-bottom: 2px solid #fff;
+    /* Simula que la línea inferior desaparece */
+    color: #000;
+}
+
+.tab-panel {
+    padding: 20px;
+    border: 1px solid #ff5773;
+    border-top: none;
+    background-color: #fff;
+    /* Transición suave para los paneles */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.tab-panel[hidden] {
+    display: block;
+    /* Mantenemos el display para la transición, controlamos visibilidad con opacity y JS */
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/* Estilos para el efecto 3D flip */
+.flip-cards-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 200px;
+    height: 200px;
+    perspective: 1000px;
+    /* Define la perspectiva 3D */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    /* Transición suave para el volteo */
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner,
+.flip-card:focus .flip-card-inner {
+    transform: rotateY(180deg);
+    /* El volteo al pasar el ratón/foco */
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Oculta la cara trasera durante la transición */
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.flip-card-front {
+    background: #3F5EFB;
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    color: white;
+}
+
+.flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+    /* Posiciona la cara trasera */
+}
+
+.flip-card-back img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    /* Propiedades de la imagen trasera */
+}
+
+.iframe-video {
+    width: 100%;
+    height: auto;
+}
+
+#mensaje-resultado {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.acierto {
+    color: green;
+}
+
+.fallo {
+    color: red;
+}
+
+.adivinanza {
+    padding-left: 20px;
+}
