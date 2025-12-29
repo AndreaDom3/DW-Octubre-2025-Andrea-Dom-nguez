@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+/*Body*/
+body {
+  font-family: "Montserrat", sans-serif;
+  /*Fuente Tipográfica usada en la Pagína, tamaño y cuerpo*/
+  font-style: normal;
+  overflow-x: hidden;
+  max-width: 100%;
+  /*Adaptación al máximo del ancho de la Página*/
+}
+
+/*Header*/
+.Header {
+  /*Características de los elementos del Header*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0 0 0 2.8125rem;
+}
+
+.Header-a {
+  /*Características de los enlaces del Header*/
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
+
+.Header-a:hover {
+  /*Características de los enlaces al pasar del Header*/
+  text-decoration: underline;
+}
+
+.Header-img {
+  /*Características del Logotipo del Header*/
+  height: 15px;
+}
+
+.Header-nav {
+  /*Características del nav del Header*/
+  margin: 0;
+  padding: 3.125rem;
+}
+
+.Header-ul {
+  /*Características del ul del Header*/
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/*Main*/
+.Main {
+  /*Características de los elementos del Main*/
+  padding: 0 0 0 2.8125rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.Main-div {
+  /*Características del Div*/
+  display: flex;
+  justify-content: center;
+  margin: .625rem;
+}
+
+.Main-p {
+  /*Características del p*/
+  text-align: justify;
+  font-size: clamp(1rem, 1.5vw + 1rem, 1.5rem);
+  /*Para hacerlo responsive*/
+}
+
+.Main-a {
+  /*Características de los enlaces del Main*/
+  padding: 1.25rem;
+  text-decoration: none;
+  font-size: small;
+  color: #000000;
+}
+
+.Main-a:hover {
+  /*Características de los enlaces al pasar del Main*/
+  text-decoration: underline;
+}
+
+.Div {
+  /*Características de los elementos del Section*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  margin: 1.25rem 0 0 0;
+  grid-gap: 1rem 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*Grid para las imágenes*/
+}
+
+.Div-img { /*Características de las imágenes del Section*/
+  height: 350px;
+  padding: 1.25rem;
+}
+
+/*Footer*/
+.Footer { /*Características de los elementos del Footer*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  font-size: smaller;
+  color: #000000;
+  padding: 1.25rem 2.5rem;
+
+}
+
+hr { /*Características de la barra decorativa de divisiñon del Footer*/
+  border: 0;
+  height: 2px;
+  background-color: #e2e2e2;
+  width: 90%;
+  margin: 20px auto;
+}
+
+.Footer-p { /*Características del p del Footer*/
+  padding: 0 1.25rem 0 3.125rem;
+}
+
+.Footer-ul { /*Características del ul del Footer*/
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.Footer-a { /*Características de los enlaces del Footer*/
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
+}
+
+.Footer-a:hover { /*Características de los enlaces al pasar del Footer*/
+  text-decoration: underline;
+}
