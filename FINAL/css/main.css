@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    /*Ayuda en el tamaño de los elementos*/
+}
+
+:root {
+    /*GAMA CROMÁTICA DEL LA WEB */
+    --color-fondo: #f2dddc;
+    --color-principal: #f56d69;
+    --color-secundario: #000000;
+    --color-blanco: #ffffff;
+    --color-negro: #000000;
+    --color-form-bg: #000000;
+    --color-form-shadow: #f56d69;
+    --color-input-hover: #ac8686;
+    --color-button-hover: #e2332d;
+
+    /*FUENTES TIPOGRÁFICAS*/
+    --font-base: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --font-special: "Special Gothic Expanded One", sans-serif;
+
+    /*TAMAÑO FUENTES*/
+    --fs-h1-hero: 4.375rem;
+    --fs-h1-main: 3.125rem;
+    --fs-h2-main: 3.125rem;
+    --fs-h3-main: 3.125rem;
+    --fs-h4-main: 3.125rem;
+    --fs-h2-form: 3.125rem;
+    --fs-span-sobremi: 1.875rem;
+    --fs-main-span: 1.0625rem;
+    --fs-label: 20px;
+    --fs-marquee: 5em;
+
+    /*DIMENSIONES*/
+    --header-height: 50rem;
+    --icon-size: 3.75rem;
+    --icon-hover-size: 4.375rem;
+    --img-hero-size: 2.375rem;
+    --img-software-size: 5rem;
+    --img-software-hover: 5.3125rem;
+    --img-contacto-size: 1.875rem;
+    --form-width: 43.75rem;
+    --form-padding: 1.875rem;
+
+    /*BORDES Y RADIOS*/
+    --border-radius-small: .3125rem;
+    --border-radius-medium: .625rem;
+    --border-radius-large: 1.25rem;
+    --border-radius-xl: 1.875rem;
+
+    /*SPACING*/
+    --padding-header: 2rem;
+    --padding-hero: 1.25rem;
+    --padding-main-section: 1.25rem;
+    --gap-main-section: .625rem;
+}
+
+/*ESTILOS GENERALES DEL BODY*/
+body {
+    margin: 0;
+    font-family: var(--font-base);
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--color-fondo);
+}
+
+/*FONT SPECIAL GOTHIC*/
+.hero__h1,
+.header,
+.header--index,
+.header--contacto,
+.header__span,
+.main__span,
+.main__h1,
+.main__h2,
+.main__h3,
+.main__h4,
+.main__h2--form,
+.main__ul,
+.marquee h1,
+.footer {
+    font-family: var(--font-special);
+}
+
+/*HEADER GENERAL*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-fondo);
+    color: var(--color-secundario);
+    padding: var(--padding-header);
+}
+
+/*HEADER INDEX y CONTACTO ANIMADO*/
+
+.header--index,
+.header--contacto {
+    height: var(--header-height);
+    position: relative;
+    padding: 1rem 2rem 43.75rem 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.header--index {
+    background-image: url(/images/Index.gif);
+}
+
+.header--contacto {
+    background-image: url(/images/Pc.gif);
+}
+
+/*Logotipo del Header*/
+.header__span {
+    padding: var(--padding-hero);
+    color: var(--color-principal);
+    font-size: 2.5rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/*Efecto hover en el Logotipo*/
+.header__span:hover {
+    color: var(--color-secundario);
+}
+
+/*Enlaces del Header*/
+.header__a {
+    transition: color 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*HERO SECTION*/
+
+.hero__h1 {
+    font-size: var(--fs-h1-hero);
+}
+
+/*Contenedor del Hero*/
+.hero-content {
+    position: absolute;
+    top: 41%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+/*Lista de iconos*/
+.hero__ul {
+    display: flex;
+    justify-content: center;
+    margin: var(--padding-hero);
+}
+
+/*Caracteristicas y especificaciones de los Li de Contactos*/
+.hero__li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--color-blanco);
+    height: var(--icon-size);
+    width: var(--icon-size);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+/*Animación hover en la Lista de iconos de Contactos*/
+.hero__li:hover {
+    background-color: #f1cdcc;
+    height: var(--icon-hover-size);
+    width: var(--icon-hover-size);
+}
+
+
+/*Tamaño de la img de los iconos*/
+.hero__img {
+    height: var(--img-hero-size);
+    width: var(--img-hero-size);
+}
+
+
+
+
+/*NAV*/
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.25rem;
+}
+
+nav ul li a {
+    color: var(--color-secundario);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+nav ul li a:hover {
+    color: var(--color-principal);
+}
+
+
+/*MAIN*/
+
+/*Linea horizontal decorativa*/
+.main__hr {
+    height: .25rem;
+    border-radius: var(--border-radius-medium);
+    border: none;
+    background-color: var(--color-negro);
+    margin: 0 auto;
+    width: 97%;
+}
+
+/*Contenedor del enlace a la sección Sobre mi en el Index*/
+.main__div--span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    margin: 1.875rem 5rem;
+    background-color: var(--color-blanco);
+    border-radius: var(--border-radius-xl);
+    height: 1.875rem;
+}
+
+/*Transición para el enlace a la sección Sobre mi en el Index*/
+.main__span {
+    transition: all 0.5s ease;
+}
+
+/*Animación hover para el enlace a la sección Sobre mi en el Index*/
+.main__span:hover {
+    font-size: var(--fs-main-span);
+}
+
+/*Características para el enlace a la sección Sobre mi en el Index*/
+.main__a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
+
+
+/*Títulos principales*/
+.main__h1,
+.main__h2,
+.main__h3,
+.main__h4,
+.main__h2--form {
+    color: var(--color-principal);
+    font-size: var(--fs-h1-main);
+}
+
+/*Span del sobre mi*/
+.main__span--sobremi {
+    font-weight: bold;
+    font-size: var(--fs-span-sobremi);
+    color: var(--color-principal);
+}
+
+/*Sección sobre mi*/
+.main__section--aboutme,
+.main__section--info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: var(--padding-main-section) 9.375rem;
+    gap: var(--gap-main-section);
+}
+
+/*Caja de texto en la sección sobre mi*/
+.main__div--aboutme {
+    font-size: 1.5625rem;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+    background-color: var(--color-blanco);
+    padding: 1.875rem;
+    border-radius: var(--border-radius-medium);
+}
+
+.main__picture--aboutme {
+    display: flex;
+    justify-content: center;
+    float: left;
+}
+
+/*Imagen de perfil*/
+.main__img--andrea {
+    height: 43.75rem;
+}
+
+.main__div--education {
+    margin: 0 0 0 3.125rem;
+}
+
+.main__picture--software {
+    display: grid;
+    padding: 20px 0 0 0;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: repeat(2, 5rem);
+    gap: 20px;
+}
+
+.main__img--software {
+    height: var(--img-software-size);
+    width: var(--img-software-size);
+    border-radius: var(--border-radius-small);
+    transition: all 0.3s ease;
+}
+
+.main__img--software:hover {
+    height: var(--img-software-hover);
+    width: var(--img-software-hover);
+}
+
+.main__p--education {
+    margin: .625rem;
+}
+
+/*FORMULARIO*/
+
+.main__section--form {
+    padding: 2.5rem;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+}
+
+.main__form {
+    width: var(--form-width);
+    padding: var(--form-padding);
+    background-color: var(--color-form-bg);
+    border-radius: var(--border-radius-medium);
+    color: var(--color-principal);
+    box-shadow: .3125rem .3125rem .9375rem .1875rem var(--color-form-shadow);
+}
+
+.main__h2--form {
+    padding: 1.25rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.main__h2--form:hover {
+    padding: 1.25rem;
+    color: black;
+}
+
+.main__div--form {
+    display: grid;
+}
+
+.main__label {
+    font-size: 20px;
+    margin: .625rem 0;
+}
+
+/*Inputs del Formulario*/
+.main__input,
+.main__input--text {
+    padding: .3125rem;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius-small);
+    transition: all 0.3s ease;
+}
+
+/*Animación hover en los Inputs del Formulario*/
+.main__input:hover,
+.main__input--text:hover {
+    box-shadow: 0rem 0rem .9375rem 3px var(--color-input-hover) inset;
+}
+
+/*Botón de Enviar del Formulario*/
+.main__button {
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    padding: .625rem;
+    margin: .625rem 0;
+    width: 18.75rem;
+    height: 2.5rem;
+    font-weight: bold;
+    border-radius: var(--border-radius-medium);
+    transition: all 0.3s ease;
+}
+
+/*Animación hover en el Botón de Enviar del Formulario*/
+.main__button:hover {
+    font-size: .875rem;
+    box-shadow: 0rem 0rem .9375rem .1875rem var(--color-button-hover) inset;
+}
+
+/*Ocultar el placeholder al escribir en los inputs*/
+input:focus::placeholder,
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+/*Sección de contacto*/
+.main__section--contacto {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0 0 4.375rem;
+}
+
+/*Contenedor de contacto*/
+.main__div--contacto {
+    position: relative;
+    overflow: hidden;
+    padding: .625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--color-blanco);
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+/*Animación hover del texto de la sección de contacto*/
+.main__div--contacto:hover {
+    background-color: var(--color-principal);
+    height: 4.375rem;
+    border-radius: .625rem;
+    width: 18.75rem;
+}
+
+/*Contenedor iconos Email y Phone*/
+.main__img--contacto {
+    height: 1.875rem;
+    width: 1.875rem;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+/*Imágenes iconos Email y Phone*/
+.img__email,
+.img__phone {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    color: var(--color-blanco);
+    font-weight: bold;
+    transition: opacity 0.4s ease;
+}
+
+/*Contenedor de la Política de Privacidad*/
+.main__div--politica {
+    margin: 1.25rem 60px;
+    width: 93.75rem;
+    padding: 1.875rem 4.375rem;
+    background-color: var(--color-blanco);
+    box-shadow: .3125rem .3125rem .9375rem .1875rem var(--color-form-shadow);
+    border-radius: 1.25rem;
+}
+
+/*Título de la Política de Privacidad*/
+.main__h2--politica {
+    margin: 1.25rem 0;
+    color: var(--color-principal);
+}
+
+/*Texto de la Política de Privacidad*/
+.main__p--politica {
+    text-wrap: balance;
+    overflow-wrap: break-word;
+    margin: .625rem 0;
+}
+
+/*Listados de la Política de Privacidad*/
+.main__ul--politica {
+    font-weight: bold;
+    margin: .625rem;
+    padding: 0 0 0 .625rem;
+}
+
+
+/*MARQUEE ANIMACIÓN*/
+.marquee {
+    overflow: hidden;
+    margin: 1.25rem 0;
+    background-color: var(--color-principal);
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+/*Animación hover del Marquee*/
+.marquee:hover {
+    background-color: var(--color-blanco);
+    color: var(--color-principal);
+}
+
+.marquee h1 {
+    font-size: 5em;
+    white-space: nowrap;
+}
+
+
+/*SPAN*/
+.span__estudios {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.span__italic {
+    font-style: italic;
+}
+
+
+/*FOOTER*/
+footer {
+    max-width: 100%;
+    height: 100px;
+    background-color: var(--color-fondo);
+    padding: 30px;
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer__span {
+    color: var(--color-principal);
+}
+
+.footer__div--index {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.25rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li a {
+    color: var(--color-negro);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer ul li a:hover {
+    color: var(--color-principal);
+    cursor: pointer;
+}
+
+
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .header__logo {
+        margin-bottom: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: .625rem;
+        text-align: center;
+    }
+
+}
